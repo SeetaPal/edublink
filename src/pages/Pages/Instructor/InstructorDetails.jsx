@@ -13,6 +13,7 @@ import course6 from "../../../assets/images/course2.jpg";
 import course7 from "../../../assets/images/course3.jpg";
 import course8 from "../../../assets/images/course4.jpg";
 
+// check this all code 
 
 
 const InstructorDetails = () => {
