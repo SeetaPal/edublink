@@ -1,0 +1,598 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ================= WRAPPER ================= */
+
+.BlogStandard_wrapper {
+  width: 100%;
+  max-width: 1500px;   /* 🔥 increased max width */
+  margin: 30px auto;
+  padding: 143px 5px;      /* 🔥 almost no side space */
+  display: flex;
+  gap: 15px;           /* tight gap */
+}
+
+
+
+/* ================= LEFT ================= */
+.BlogStandard_left {
+  flex: 3.2;
+}
+
+/* POST CARD */
+
+.BlogStandard_post {
+  display: flex;
+  flex-direction: column;   /* 🔥 IMPORTANT CHANGE */
+  background: #fff;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.BlogStandard_post:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE FULL WIDTH */
+
+/* wrapper important */
+.BlogStandard_postImage {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.BlogStandard_postImage img {
+  width: 100%;     /* 🔥 FIXED */
+  height: 680px;   /* adjust as needed */
+  object-fit: cover;
+   transition: transform 0.4s ease;
+}
+
+/* 🔥 black overlay */
+.BlogStandard_postImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);   /* initially transparent */
+  transition: 0.4s ease;
+}
+
+
+/* 🔥 hover effect */
+.BlogStandard_postImage:hover img {
+  transform: scale(1.08);   /* smooth zoom */
+}
+
+.BlogStandard_postImage:hover::after {
+  background: rgba(0, 0, 0, 0.4);  /* dark overlay */
+}
+
+/* CONTENT */
+.BlogStandard_content {
+  padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+/* CATEGORY */
+.BlogStandard_cat {
+  padding: 8px 15px;
+    color: gray;
+    font-size: 18px;
+  cursor: pointer;          /* 🔥 IMPORTANT */
+  transition: 0.3s ease;    /* smooth effect */
+}
+
+/* hover effect */
+.BlogStandard_cat:hover {
+  color: rgb(43, 228, 172);
+}
+
+/* TITLE */
+.BlogStandard_content h2 {
+  font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.4;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+      cursor: pointer;            /* 🔥 clickable feel */
+  transition: color 0.3s ease;
+}
+
+.BlogStandard_content h2:hover {
+  color: #26cab4;             /* 🔥 green on hover */
+}
+
+/* META */
+
+.BlogStandard_meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 22px;
+  color: black;
+}
+
+/* each item */
+.meta_item {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* space between icon & text */
+}
+
+/* icon style */
+.meta_icon {
+  color: #27ae60;
+  font-size: 22px;
+}
+
+/* divider */
+.meta_divider {
+  color: #bbb;
+  margin: 0 4px;
+}
+
+/* PARAGRAPH */
+.BlogStandard_pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+/* each number */
+.BlogStandard_pagination span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;   /* 🔥 circle */
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* active */
+.BlogStandard_pagination .active {
+  background: #27ae60;
+  color: #fff;
+  border-color: #27ae60;
+}
+
+/* 🔥 hover effect */
+.BlogStandard_pagination span:hover {
+  background: #16cea6;   /* green */
+  color: #000;           /* black text */
+  border-color: #27ae60;
+}
+/* Button */
+
+/* button style */
+
+.BlogStandard_learnBtn {
+  display: inline-flex;      /* 🔥 important (inline size) */
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  font-weight: 500;
+  color: #111;
+
+  padding:16px 22px;         /* small size */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  text-decoration: none;
+  margin-top: 10px;
+
+  width: auto;               /* 🔥 ensure not full width */
+  max-width: fit-content;    /* extra safety */
+
+  transition: all 0.3s ease;
+}
+
+/* hover */
+.BlogStandard_learnBtn:hover {
+  color: #fff;
+  background: #27ae60;
+  border-color: #27ae60;
+}
+
+
+/* ================= PAGINATION ================= */
+
+/* container */
+.BlogStandard_pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+/* default (normal text) */
+.BlogStandard_pagination span {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+
+  padding: 6px 10px;   /* light spacing */
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* 🔥 hover pe pura style apply */
+.BlogStandard_pagination span:hover {
+  background: #27ae60;
+  color: #000;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* active (optional - always highlighted) */
+.BlogStandard_pagination .active {
+  background: #27ae60;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= SIDEBAR ================= */
+
+/* SIDEBAR */
+/* SIDEBAR */
+.BlogStandard_sidebar {
+  flex: 1;
+}
+
+/* 🔥 ONE MAIN CARD */
+.BlogStandard_sidebarCard {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* EACH SECTION */
+.BlogStandard_sidebar_section h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* spacing between sections */
+.BlogStandard_sidebar_section {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+/* last section no border */
+.BlogStandard_sidebar_section:last-child {
+  border-bottom: none;
+}
+
+/* WIDGET CARD  no use*/
+
+.BlogStandard_widget {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+
+.BlogStandard_widget h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+
+/* Search  */
+
+.BlogStandard_searchBox {
+  position: relative;
+}
+
+/* input */
+.BlogStandard_searchBox input {
+  width: 100%;
+  padding: 12px 40px 12px 15px; /* right space for icon */
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* focus */
+.BlogStandard_searchBox input:focus {
+  border-color: #27ae60;
+  box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.1);
+}
+
+/* icon */
+.search_icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* hover icon */
+.search_icon:hover {
+  color: #27ae60;
+}
+
+/* ====================
+Recent
+=================== */
+
+.BlogStandard_recentPost {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.BlogStandard_recentPost:hover {
+  transform: translateX(5px);
+}
+
+.BlogStandard_recentPost img {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.BlogStandard_recentPost p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.BlogStandard_recent_date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+.BlogStandard_recent_date svg {
+  color: #27ae60;
+}
+
+/* ====================
+Categories
+=================== */
+
+.BlogStandard_categories {
+  list-style: none;
+  padding: 0;
+}
+
+.BlogStandard_categories li {
+ display: flex;
+    justify-content: space-between;
+    padding: 12px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.BlogStandard_categories li:hover span {
+  color: #27ae60;   /* 🔥 green text */
+}
+
+.BlogStandard_categories li:hover {
+    transform: translateX(5px);
+}
+
+
+.BlogStandard_categories span {
+    font-size: 14px;
+    color: #333;
+}
+
+.BlogStandard_categories b {
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+.BlogStandard_categories li b {
+  background: #eee;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #333;  /* ensure no change */
+}
+
+
+/* ====================
+Tag
+=================== */
+
+.BlogStandard_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.BlogStandard_tags span {
+    border: 1px solid #ddd;
+    padding: 12px 34px;
+    cursor: pointer;
+}
+
+.BlogStandard_tags span:hover {
+    background-color: #4aca7f;
+    color: white;
+}
+
+
+
+/* ================= SIDEBAR IMAGE ================= */
+
+.BlogStandard_banner_box {
+    margin: 25px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.BlogStandard_banner_box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.BlogStandard_banner_box:hover img {
+    transform: scale(1.05);
+}
+
+
+.BlogStandard_recent_date {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #777;
+    margin-top: 4px;
+}
+
+.BlogStandard_recent_date svg {
+    color: #27ae60;
+}
+
+.BlogStandard_widget .space-top {
+    margin-top: 50px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+
+@media (max-width: 992px) {
+
+  .BlogStandard_wrapper {
+    flex-direction: column;   
+    padding: 0 15px;
+  }
+
+  .BlogStandard_left {
+    flex: 1;
+  }
+
+  .BlogStandard_sidebar {
+    width: 100%;
+  }
+
+  /* image height reduce */
+  .BlogStandard_postImage img {
+    height: 400px;
+  }
+
+  /* title size thoda small */
+  .BlogStandard_content h2 {
+    font-size: 24px;
+  }
+
+  /* meta smaller */
+  .BlogStandard_meta {
+    font-size: 16px;
+  }
+
+  .meta_icon {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .BlogStandard_wrapper {
+    padding: 0 10px;
+  }
+
+  /* card spacing */
+  .BlogStandard_content {
+    padding: 18px;
+  }
+
+  /* image aur chhoti */
+  .BlogStandard_postImage img {
+    height: 250px;
+  }
+
+  /* title responsive */
+  .BlogStandard_content h2 {
+    font-size: 20px;
+  }
+
+  /* category */
+  .BlogStandard_cat {
+    font-size: 14px;
+  }
+
+  /* paragraph */
+  .BlogStandard_content p {
+    font-size: 14px;
+  }
+
+  /* button small */
+  .BlogStandard_learnBtn {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  /* pagination smaller */
+  .BlogStandard_pagination span {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+}

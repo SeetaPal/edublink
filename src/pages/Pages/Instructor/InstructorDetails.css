@@ -1,0 +1,783 @@
+/* =========================================================
+   GLOBAL RESET
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   COMMON CONTAINER
+   Page ko center me lane ke liye
+   ========================================================= */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+/* =========================================================
+   BANNER SECTION
+   Top banner + breadcrumb
+   ========================================================= */
+
+.instructor-banner {
+  width: 100vw;
+
+  position: relative;
+  left: 50%;
+  right: 50%;
+
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  background-color: #F0F4F5;
+
+  text-align: center;
+
+  padding: 180px 20px 40px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.breadcrumb {
+  font-size: 16px;
+  color: #666;
+}
+
+.breadcrumb .page {
+  color: #e91e63;
+  font-weight: 500;
+}
+
+/* =========================================================
+   INSTRUCTOR MAIN SECTION
+   Left image + right content
+   ========================================================= */
+
+.instructorDetails-main {
+  width: 90%;
+
+  margin: 60px auto 0;
+
+  display: flex;
+  gap: 100px;
+
+  align-items: flex-start;
+}
+
+/* =========================================================
+   LEFT SIDE IMAGE
+   ========================================================= */
+
+.instructorDetails-left {
+  text-align: center;
+}
+
+.instructorDetails-left img {
+  width: 394px;
+  height: 394px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* =========================================================
+   SOCIAL ICONS
+   ========================================================= */
+
+.instructorDetails-socialIcons {
+  display: flex;
+  gap: 20px;
+
+  margin-top: 28px;
+  justify-content: center;
+}
+
+.instructorDetails-socialIcons i {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff;
+  color: gray;
+
+  border: 1px solid #ddd;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.instructorDetails-socialIcons i:hover {
+  background: green;
+  color: #fff;
+}
+
+/* =========================================================
+   RIGHT SIDE CONTENT
+   ========================================================= */
+
+.instructorDetails-right .role {
+  color: #1ab69d;
+
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.instructorDetails-right h1 {
+ font-weight: 700;
+    font-size: 50px;
+  margin: 10px 0;
+}
+
+.instructorDetails-right .subtitle {
+  color: gray;
+  font-size:17px;
+}
+
+.instructorDetails-right .stats {
+  margin: 29px 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 15px;
+    color: #585656;
+    margin-bottom:50px;
+
+}
+
+.instructorDetails-right .stats i.fa-user-graduate {
+  color: #00c878;
+  margin-right: 5px;
+}
+
+
+
+.instructorDetails-right h2{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.instructorDetails-right p {
+  font-size: 16px;
+color : gray;
+line-height:1.7;
+margin-bottom: 20px;
+}
+
+/* =========================================================
+   CONTACT SECTION
+   ========================================================= */
+
+.instructorDetails-contact {
+  margin-top: 50px;
+}
+
+.instructorDetails-contact p {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.instructorDetails-contact p b {
+  display: inline-block;
+  min-width: 80px; /* alignment clean */
+}
+
+.instructorDetails-contact h2 {
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.instructorDetails-contact p {
+  margin: 10px 0;
+
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.instructorDetails-contact span {
+  color: gray;
+}
+
+
+/* =========================================================
+   COURSES SECTION
+   ========================================================= */
+
+
+.coursesDetail-section {
+  background: #F0F4F5;
+
+  padding: 60px 20px;
+
+  margin-top: 50px;
+}
+
+.coursesDetail-title {
+  text-align: center;
+
+  margin-bottom: 40px;
+
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   COURSE GRID
+   ========================================================= */
+
+.coursesDetail-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+/* =========================================================
+   COURSE CARD
+   ========================================================= */
+
+.coursesDetail-card {
+  background: #fff;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  min-height: 571px;
+
+  transition: 0.4s ease;
+}
+
+/* =========================================================
+   CARD HOVER
+   Full green effect
+   ========================================================= */
+
+.coursesDetail-card:hover {
+  background: #1ab69d;
+
+  transform: translateY(-5px);
+}
+
+/* =========================================================
+   IMAGE WRAPPER
+   ========================================================= */
+
+.coursesDetail-course-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================================================
+   COURSE IMAGE
+   ========================================================= */
+
+.coursesDetail-course-image-wrapper img {
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+
+  transition: 0.4s ease;
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+   Hover pe green layer
+   ========================================================= */
+
+.coursesDetail-course-image-wrapper::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: transparent;
+
+  transition: 0.4s ease;
+}
+
+/* =========================================================
+   IMAGE HOVER EFFECT
+   ========================================================= */
+
+.coursesDetail-card:hover .coursesDetail-course-image-wrapper::after {
+  background: #1ab69d;
+}
+
+.coursesDetail-card:hover .coursesDetail-course-image-wrapper img {
+  opacity: 0.1;
+  transform: scale(1.05);
+}
+
+/* =========================================================
+   TIME BADGE
+   ========================================================= */
+
+.coursesDetail-course-time-badge {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  background: #ffeb3b;
+  color: #333;
+
+  padding: 6px 12px;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  z-index: 10;
+}
+
+/* =========================================================
+   HEART ICON
+   ========================================================= */
+
+.coursesDetail-heart {
+  position: absolute;
+
+  top: 60px;
+  right: 12px;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  background: rgb(23, 232, 166);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+
+  color: transparent;
+
+  -webkit-text-stroke: 2px #fff;
+
+  cursor: pointer;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(20px);
+
+  transition: 0.4s ease;
+
+  z-index: 20;
+}
+
+/* heart hover show */
+
+.coursesDetail-card:hover .coursesDetail-heart {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+/* heart hover */
+
+.coursesDetail-heart:hover {
+  background: red;
+
+  -webkit-text-stroke: 3px #fff;
+}
+
+/* =========================================================
+   LEVEL BADGE
+   ========================================================= */
+
+.coursesDetail-level {
+  display: inline-block;
+
+  width: fit-content;
+
+  background: #e7f7ee;
+  color: #1b5e20;
+
+  padding: 10px 12px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  border-radius: 6px;
+
+  margin: 25px 20px 10px;
+}
+
+.coursesDetail-card:hover .coursesDetail-level {
+  top: 120px;
+  left: 20px;
+
+  margin: 0;
+
+  background: #fff;
+  color: green;
+}
+
+
+/* =========================================================
+   CARD TITLE
+   ========================================================= */
+
+.coursesDetail-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+
+  margin: 10px 20px;
+
+  line-height: 1.5;
+}
+
+.coursesDetail-card:hover h3 {
+  top: 170px;
+  left: 20px;
+  right: 20px;
+
+  margin: 0;
+}
+
+/* =========================================================
+   RATING
+   ========================================================= */
+
+.coursesDetail-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin: 10px 20px;
+
+  font-size: 14px;
+  color: #666;
+}
+
+.coursesDetail-card:hover .coursesDetail-rating {
+  top: 260px;
+  left: 20px;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   PRICE
+   ========================================================= */
+
+.coursesDetail-price {
+  margin: 10px 20px;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: red;
+}
+
+.coursesDetail-card:hover .coursesDetail-price {
+  top: 300px;
+  left: 20px;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   Default hidden
+   ========================================================= */
+
+.coursesDetail-desc {
+  display: none;
+}
+
+.coursesDetail-card:hover .coursesDetail-desc {
+  display: block;
+
+  top: 350px;
+  left: 20px;
+  right: 20px;
+
+  line-height: 1.8;
+
+  font-size: 14px;
+}
+
+/* =========================================================
+   META
+   Lessons + Students
+   ========================================================= */
+
+.coursesDetail-meta {
+  margin: 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 15px;
+}
+
+.coursesDetail-card:hover .coursesDetail-meta {
+  top: 450px;
+  left: 20px;
+  right: 20px;
+
+  margin: 0;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   HOVER CONTENT POSITION
+   ========================================================= */
+
+.coursesDetail-card:hover .coursesDetail-level,
+.coursesDetail-card:hover h3,
+.coursesDetail-card:hover .coursesDetail-rating,
+.coursesDetail-card:hover .coursesDetail-price,
+.coursesDetail-card:hover .coursesDetail-desc,
+.coursesDetail-card:hover .coursesDetail-meta {
+  position: absolute;
+
+  color: #fff;
+
+  z-index: 20;
+}
+
+
+
+
+/* =========================================================
+   ENROLL BUTTON
+   ========================================================= */
+
+.coursesDetail-enrollBtn {
+  display: none;
+}
+
+/* hover pe show */
+
+.coursesDetail-card:hover .coursesDetail-enrollBtn {
+  display: block;
+
+  position: absolute;
+
+  top: 510px;
+  left: 20px;
+
+  background: red;
+  color: #fff;
+
+  border: none;
+
+  padding: 14px 28px;
+
+  border-radius: 6px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  z-index: 20;
+
+  transition: 0.4s ease;
+}
+
+/* button hover */
+
+.coursesDetail-enrollBtn:hover {
+  background: #fff;
+  color: red;
+}
+
+
+
+
+
+
+/* =========================================================
+   Heart 
+   ========================================================= */
+
+
+/* HOVER PE TIME BADGE HIDE */
+.coursesDetail-card:hover .coursesDetail-course-time-badge {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-15px);
+}
+
+/* HEART ICON */
+.coursesDetail-heart {
+  position: absolute;
+  top: 15px;
+  right: 12px;
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  background: rgb(23, 232, 166); 
+
+  border: 2px solid #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* color: transparent; */
+  color: #fff;   /* HEART WHITE */
+
+
+  -webkit-text-stroke: 2px #fff;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(20px);
+
+  transition: 0.4s ease;
+
+  z-index: 30;
+}
+
+/* HOVER PE HEART SHOW */
+.coursesDetail-card:hover .coursesDetail-heart {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* HEART PE CURSOR */
+.coursesDetail-heart:hover {
+  background: red;
+  border: 3px solid #fff;
+}
+
+
+@media (max-width: 1024px) {
+
+  .instructorDetails-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .instructorDetails-left img {
+    width: 250px;
+    height: auto;
+  }
+
+  .instructorDetails-right {
+    padding: 20px;
+  }
+
+  .coursesDetail-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .bannerContent h1 {
+    font-size: 28px;
+  }
+
+  .instructorDetails-left img {
+    width: 200px;
+  }
+
+  .instructorDetails-socialIcons {
+    justify-content: center;
+  }
+
+  .coursesDetail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coursesDetail-course-image-wrapper img {
+    height: 200px;
+  }
+
+  .coursesDetail-card {
+    padding: 15px;
+  }
+
+  .coursesDetail-title {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .bannerContent h1 {
+    font-size: 22px;
+  }
+
+  .instructorDetails-right h1 {
+    font-size: 20px;
+  }
+
+  .instructorDetails-right p {
+    font-size: 14px;
+  }
+
+  .coursesDetail-course-image-wrapper img {
+    height: 180px;
+  }
+
+  .coursesDetail-enrollBtn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .coursesDetail-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .coursesDetail-grid {
+    grid-template-columns: 1fr;
+  }
+}

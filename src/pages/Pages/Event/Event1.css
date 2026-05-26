@@ -1,0 +1,629 @@
+/* Banner */
+.banner {
+  background: #0f172a;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 40px;
+}
+
+.banner p {
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+
+/* Header */
+.event-header {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.event-header h2 {
+  color: #3b82f6;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.title-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-row h3 {
+  font-size: 28px;
+}
+
+.arrow {
+  font-size: 24px;
+  color: #3b82f6;
+}
+
+/* Grid */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
+
+
+
+/* Card hover base */
+.card {
+    overflow: visible; 
+      position: relative;
+
+     border-radius: 12px;
+  /* overflow: hidden; */
+  background: #f9fafb;
+  transition: 0.4s ease;
+  display: flex;
+  flex-direction: column;
+    height: auto; /* ✅ important */
+  transition: 0.4s ease;
+
+  
+}
+
+/* Image Section */
+/*  */
+/* 
+.image-box {
+  position: relative;
+  overflow: hidden;
+} */
+
+.image-box {
+  position: relative;
+
+}
+
+.image-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card:hover .image-box::after {
+  opacity: 1;
+}
+
+.image-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Time Box */
+.time-box {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #f97316; /* orange */
+  color: white;
+  padding: 6px 14px;
+
+  border-radius: 2px;   /* 🔥 rectangle (NOT circle) */
+  /* border-radius: 0;  <-- ye bhi use kar sakte ho */
+
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.card:hover .time-box {
+  background: #ea580c; /* darker orange on hover */
+}
+
+/* Date Circle */
+.date-circle {
+  position: absolute;
+  right: 20px;
+  top: 160px; /* ✅ image ke bottom edge pe stick */
+
+  width: 70px;
+  height: 70px;
+
+  background: #41a56b;
+  color: white;
+
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+  z-index: 10;
+  transition: 0.4s ease;
+}
+.date-circle span {
+  display: block;
+  font-size: 14px;
+}
+
+.date-circle small {
+  font-size: 12px;
+}
+
+
+
+
+.card-content {
+  padding: 50px 20px 20px;
+  background: white;
+  position: relative;
+  top: 0;
+  transition: 0.4s ease;
+  flex-grow: 1;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* .card:hover .date-circle {
+  transform: scale(1.1) rotate(5deg); 
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+} */
+
+.card:hover .date-circle {
+  background: #ea580c;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Button hidden initially */
+.join-btn {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  background: #de1414;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s ease;
+  transition: 0.4s ease;
+  position: relative;
+}
+
+
+/* 🔥 HOVER EFFECT */
+.card:hover {
+  transform: translateY(-10px); /* 🔥 pura card upar jayega */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* hover pe content upar aaye but image overlap na kare */
+/* REMOVE THIS */
+.card:hover .card-content {
+  transform: translateY(-40px);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Show button */
+.card:hover .join-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional smooth hover on image */
+.image-box img {
+  transition: 0.4s ease;
+}
+
+.card:hover .image-box img {
+  transform: scale(1.05);
+}
+
+.card-content h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: gray;
+}
+
+.location {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #3b82f6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Banner */
+.banner {
+  background: #0f172a;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 40px;
+}
+
+.banner p {
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+
+/* Header */
+.event-header {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.event-header h2 {
+  color: #3b82f6;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.title-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-row h3 {
+  font-size: 28px;
+}
+
+.arrow {
+  font-size: 24px;
+  color: #3b82f6;
+}
+
+/* Grid */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
+
+
+
+/* Card hover base */
+.card {
+    overflow: visible; 
+      position: relative;
+
+     border-radius: 12px;
+  /* overflow: hidden; */
+  background: #f9fafb;
+  transition: 0.4s ease;
+  display: flex;
+  flex-direction: column;
+    height: auto; /* ✅ important */
+  transition: 0.4s ease;
+
+  
+}
+
+/* Image Section */
+/*  */
+/* 
+.image-box {
+  position: relative;
+  overflow: hidden;
+} */
+
+.image-box {
+  position: relative;
+
+}
+
+.image-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card:hover .image-box::after {
+  opacity: 1;
+}
+
+.image-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Time Box */
+.time-box {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #f97316; /* orange */
+  color: white;
+  padding: 6px 14px;
+
+  border-radius: 2px;   /* 🔥 rectangle (NOT circle) */
+  /* border-radius: 0;  <-- ye bhi use kar sakte ho */
+
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.card:hover .time-box {
+  background: #ea580c; /* darker orange on hover */
+}
+
+/* Date Circle */
+.date-circle {
+  position: absolute;
+  right: 20px;
+  top: 160px; /* ✅ image ke bottom edge pe stick */
+
+  width: 70px;
+  height: 70px;
+
+  background: #41a56b;
+  color: white;
+
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+  z-index: 10;
+  transition: 0.4s ease;
+}
+.date-circle span {
+  display: block;
+  font-size: 14px;
+}
+
+.date-circle small {
+  font-size: 12px;
+}
+
+
+
+
+.card-content {
+  padding: 50px 20px 20px;
+  background: white;
+  position: relative;
+  top: 0;
+  transition: 0.4s ease;
+  flex-grow: 1;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* .card:hover .date-circle {
+  transform: scale(1.1) rotate(5deg); 
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+} */
+
+.card:hover .date-circle {
+  background: #ea580c;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Button hidden initially */
+.join-btn {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  background: #de1414;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s ease;
+  transition: 0.4s ease;
+  position: relative;
+}
+
+
+/* 🔥 HOVER EFFECT */
+.card:hover {
+  transform: translateY(-10px); /* 🔥 pura card upar jayega */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* hover pe content upar aaye but image overlap na kare */
+/* REMOVE THIS */
+.card:hover .card-content {
+  transform: translateY(-40px);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Show button */
+.card:hover .join-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional smooth hover on image */
+.image-box img {
+  transition: 0.4s ease;
+}
+
+.card:hover .image-box img {
+  transform: scale(1.05);
+}
+
+.card-content h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: gray;
+}
+
+.location {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #3b82f6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .event-grid {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .banner {
+    padding: 40px 15px;
+  }
+
+  .banner h1 {
+    font-size: 26px;
+  }
+
+  .banner p {
+    font-size: 14px;
+  }
+
+  .event-header {
+    padding: 25px 15px;
+  }
+
+  .title-row h3 {
+    font-size: 20px;
+  }
+
+  .image-box img {
+    height: 180px;
+  }
+
+  .date-circle {
+    width: 55px;
+    height: 55px;
+    top: 135px;
+    right: 15px;
+  }
+
+  .card-content {
+    padding: 40px 15px 15px;
+  }
+
+  .card-content h4 {
+    font-size: 16px;
+  }
+
+  .card-content p {
+    font-size: 13px;
+  }
+
+  .join-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .banner h1 {
+    font-size: 22px;
+  }
+
+  .event-header h2 {
+    font-size: 12px;
+  }
+
+  .title-row h3 {
+    font-size: 18px;
+  }
+
+  .image-box img {
+    height: 160px;
+  }
+
+  .time-box {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+
+  .date-circle {
+    width: 50px;
+    height: 50px;
+    top: 125px;
+  }
+
+  .date-circle span {
+    font-size: 12px;
+  }
+
+  .date-circle small {
+    font-size: 10px;
+  }
+
+  .card-content {
+    padding: 35px 12px 12px;
+  }
+
+  .join-btn {
+    font-size: 13px;
+    padding: 8px;
+  }
+}

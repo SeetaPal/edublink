@@ -1,0 +1,321 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* HERO */
+.course2-hero{
+height:400px;
+background:url("https://images.unsplash.com/photo-1523240795612-9a054b0db644") center/cover;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero-content h1{
+font-size:60px;
+}
+
+/* TOP BAR */
+.course2-topbar{
+display:flex;
+justify-content:space-between;
+padding:50px 8%;
+}
+
+.course2-topbar input{
+padding:12px;
+border:1px solid #ddd;
+width:250px;
+}
+
+/* GRID */
+.course2-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+padding:0 8% 80px;
+}
+
+/* CARD */
+
+/* .course2-card{
+background:#fff;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+border-radius:16px;
+overflow:hidden;
+border-bottom:3px solid transparent;
+transition:.3s;
+}
+
+.course2-card:hover{
+border-bottom:3px solid red;
+transform:translateY(-5px);
+} */
+
+
+/* CARD */
+.course2-card{
+background:#fff;
+border-radius:0px;
+overflow:hidden;
+position:relative;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:0.4s;
+}
+
+/* HOVER LIFT */
+.course2-card:hover{
+transform:translateY(-10px);
+}
+
+
+
+/* IMAGE */
+/* .img-box{
+position:relative;
+}
+
+.img-box img{
+width:100%;
+height:220px;
+object-fit:cover;
+} */
+
+.img-box{
+position:relative;
+overflow:hidden;
+}
+
+.img-box img{
+width:100%;
+height:220px;
+object-fit:cover;
+transition:0.5s;
+}
+
+/* slight zoom on hover */
+.course2-card:hover .img-box img{
+transform:scale(1.08);
+}
+
+/* ONLY BADGE */
+
+.img-box{
+position:relative;   /* 🔴 MUST for badge overlay */
+}
+
+/* BADGE - UPDATED YELLOW STYLE */
+.badge{
+position:absolute;
+top:12px;
+left:12px;
+display:flex;
+align-items:center;
+gap:8px;
+
+padding:10px 14px;   /* 🔴 bigger size */
+font-size:13px;
+font-weight:800;
+
+background:#FFD700;  /* 🔴 yellow background */
+color:#111;          /* dark text for contrast */
+
+border-radius:0px;   /* rectangle */
+border:1px solid #e6c200;
+
+z-index:10;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* icon */
+.badge-icon{
+font-size:14px;
+color:#111;
+}
+
+/* .content{
+padding:20px;
+} */
+
+/* .content{
+background:#f5f5f5;  
+padding:20px;
+} */
+
+/* content panel */
+.content{
+background:#f5f5f5;
+padding:22px;
+position:relative;
+margin:-27px 0px 0px;   
+z-index:2;
+
+transition:all .4s ease;
+}
+
+/* hover pe aur upar lift hoga (approx 50px effect) */
+.course2-card:hover .content{
+transform:translateY(-50px);
+box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+/* CATEGORY */
+.course-cat{
+display:inline-block;
+padding:6px 12px;
+background:#f5b6ae;   /* same light green for all */
+color:#d30d0d;        /* same green text */
+font-weight:700;
+margin-bottom:18px;
+border-radius:0px;    /* 🔴 rectangle (NO round) */
+font-size:13px;
+border:1px solid #d7f2dd;
+}
+
+/* TITLE */
+.title{
+font-size:20px;
+margin-bottom:10px;
+transition:.3s;
+}
+
+.course2-card:hover .title{
+color:green;
+}
+
+/* DESC */
+p{
+font-size:14px;
+color:#666;
+margin-bottom:10px;
+}
+
+/* RATING */
+.rating{
+display:flex;
+align-items:center;
+gap:5px;
+margin-bottom:10px;
+}
+
+.star{
+color:gold; /* FIX YELLOW STAR */
+}
+
+.rating span{
+color:#111;   /* black */
+margin-left:8px;
+font-weight:600;
+}
+
+/* ENROLL BUTTON */
+/* .enroll-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 18px;
+
+background:#e63946;  
+color:#fff;
+
+font-weight:700;
+font-size:14px;
+
+cursor:pointer;
+position:relative;
+overflow:hidden;
+
+border-radius:0px; 
+transition:0.3s ease;
+
+width:max-content;  
+}
+
+.enroll-btn{
+z-index:1;
+}
+
+.enroll-btn::before{
+content:"";
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:#27ae60;  
+transition:0.4s ease;
+z-index:-1;
+}
+
+.enroll-btn:hover::before{
+left:0;
+}
+
+.enroll-btn:hover{
+color:#fff;
+} */
+
+
+/* HIDDEN BY DEFAULT */
+.enroll-btn{
+opacity:0;
+transform:translateY(20px);
+transition:0.4s;
+background:#e63946;
+color:#fff;
+padding:10px 18px;
+font-weight:700;
+cursor:pointer;
+width:max-content;
+position:relative;
+overflow:hidden;
+}
+
+/* SHOW ON CARD HOVER */
+.course2-card:hover .enroll-btn{
+opacity:1;
+transform:translateY(0);
+}
+
+/* GREEN HOVER EFFECT */
+.enroll-btn::before{
+content:"";
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:#27ae60;
+transition:0.4s;
+z-index:-1;
+}
+
+.enroll-btn:hover::before{
+left:0;
+}
+
+
+
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.course2-grid{
+grid-template-columns:1fr;
+}
+}

@@ -1,0 +1,702 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   PAGE WRAPPER
+========================= */
+.CoursesDetails5-page {
+  width: 100%;
+  background: #f7faf9;
+}
+
+/* =========================
+   BANNER
+========================= */
+.CoursesDetails5-banner {
+  width: 100%;
+  padding: 25px 7%;
+  background: #f7faf9;
+  border-bottom: 1px solid #eee;
+
+  font-size: 15px;
+  color: #666;
+
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.CoursesDetails5-banner strong {
+  color: #111;
+  font-weight: 700;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+/* .CoursesDetails5-topSection {
+  width: 100%;
+  padding: 60px 7%;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+} */
+
+
+.CoursesDetails5-topSection {
+  width: 100%;
+  padding: 60px 7%;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+
+  align-items: stretch; /* ✅ IMPORTANT ADD */
+}
+
+/* LEFT SIDE */
+.CoursesDetails5-leftBox {
+  width: 68%;
+}
+
+/* RIGHT SIDE */
+
+/* .CoursesDetails5-rightBox {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+} */
+
+.CoursesDetails5-rightBox {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%; /* ✅ ADD */
+}
+
+/* =========================
+   DESCRIPTION BOX
+========================= */
+.CoursesDetails5-descriptionBox {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.CoursesDetails5-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.CoursesDetails5-descriptionBox h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.CoursesDetails5-descriptionBox p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* =========================
+   COURSE META
+========================= */
+.CoursesDetails5-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.CoursesDetails5-metaItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  color: #555;
+}
+
+.CoursesDetails5-metaItem svg {
+  color: #16d39a;
+  font-size: 14px;
+}
+
+.CoursesDetails5-divider {
+  color: #ccc;
+}
+
+.CoursesDetails5-stars {
+  display: flex;
+  gap: 3px;
+}
+
+/* =========================
+   LEARNING LIST
+========================= */
+.CoursesDetails5-learnList {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.CoursesDetails5-learnList li {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* =========================
+   RIGHT CARD (STICKY)
+========================= */
+
+/* .CoursesDetails5-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+
+  position: sticky;
+  top: 20px;
+
+  height: fit-content;
+  align-self: flex-start;
+} */
+
+.CoursesDetails5-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+
+  position: sticky;
+  top: 20px;
+
+  height: 100%;   /* ✅ CHANGE THIS */
+}
+
+/* VIDEO */
+.CoursesDetails5-video {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.CoursesDetails5-video iframe {
+  width: 100%;
+  height: 220px;
+  border: none;
+}
+
+/* COURSE INFO */
+.CoursesDetails5-cardTitle {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.CoursesDetails5-infoRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.CoursesDetails5-infoRow span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.CoursesDetails5-infoRow svg {
+  color: #16d39a;
+}
+
+/* BUTTON */
+.CoursesDetails5-buyBtn {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+
+  background: #16d39a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.CoursesDetails5-buyBtn:hover {
+  background: #00b67a;
+}
+
+/* SHARE */
+.CoursesDetails5-share {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.CoursesDetails5-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.CoursesDetails5-icons svg {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f3f4f6;
+  border-radius: 50%;
+
+  color: #333;
+  font-size: 16px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.CoursesDetails5-icons svg:hover {
+  background: #16d39a;
+  color: #fff;
+}
+
+/* =========================
+   CURRICULUM CARD
+========================= */
+.CoursesDetails5_curriculum_card {
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  padding: 30px;
+  margin-top: 40px;
+}
+
+/* HEADER */
+.CoursesDetails5_curriculum_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.CoursesDetails5_curriculum_header h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* TOGGLE BUTTON (FIXED ALIGNMENT) */
+
+.CoursesDetails5_toggle_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.CoursesDetails5_toggle_btn svg {
+  font-size: 22px !important;
+  color: #222 !important;
+  display: block;
+}
+
+
+
+.CoursesDetails5_toggle_btn:hover {
+  background: #00b67a;
+  border-color: #00b67a;
+  color: #fff; /* ⭐ THIS changes icon color automatically */
+}
+
+.CoursesDetails5_toggle_btn:hover svg {
+  color: #fff;
+}
+
+.CoursesDetails5_toggle_btn.active svg {
+  transform: rotate(180deg);
+}
+
+
+
+/* CURRICULUM ROW */
+.CoursesDetails5_curriculum_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.CoursesDetails5_curriculum_left span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.CoursesDetails5_curriculum_left span:hover {
+  color: #00b67a;
+}
+
+.CoursesDetails5_curriculum_right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* BADGES */
+.CoursesDetails5_preview {
+  color: #00b67a;
+  font-weight: 600;
+}
+
+.time-badge {
+  background: #ffe5e5;
+  color: #b30000;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* LAPTOP */
+@media (max-width: 1200px) {
+  .CoursesDetails5-leftBox { width: 65%; }
+  .CoursesDetails5-rightBox { width: 35%; }
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+  .CoursesDetails5-topSection {
+    flex-direction: column;
+  }
+
+  .CoursesDetails5-leftBox,
+  .CoursesDetails5-rightBox {
+    width: 100%;
+  }
+
+  .CoursesDetails5-card {
+    position: relative;
+    top: 0;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .CoursesDetails5-topSection {
+    padding: 40px 20px;
+  }
+
+  .CoursesDetails5-title {
+    font-size: 28px;
+  }
+
+  .CoursesDetails5-descriptionBox {
+    padding: 25px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 576px) {
+  .CoursesDetails5-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .CoursesDetails5_curriculum_row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 480px) {
+  .CoursesDetails5-banner {
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  .CoursesDetails5-buyBtn {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .CoursesDetails5-icons svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* =========================
+   REVIEWS SECTION (CLEAN LIST)
+========================= */
+
+
+.CoursesDetails5_reviews_section {
+  width: 100%;
+  margin: 80px 0;
+}
+
+/* ITEM (NO CARD) */
+.CoursesDetails5_review_item {
+  display: flex;
+  gap: 25px;
+
+  padding: 25px 0;
+  border-bottom: 1px solid #eee;
+
+  background: transparent;
+  box-shadow: none;
+}
+
+/* IMAGE (RECTANGLE) */
+.CoursesDetails5_review_left img {
+  width: 100%;
+  height:  100%;
+
+  object-fit: cover;
+
+  border-radius: 0; /* rectangle */
+  border: none;
+}
+
+/* RIGHT SIDE */
+.CoursesDetails5_review_right {
+  flex: 1;
+}
+
+/* NAME */
+.CoursesDetails5_review_right h3 {
+  font-size: 29px;
+  font-weight: 700;
+  margin-bottom: -30px;
+  color: #111;
+}
+
+/* DESIGNATION */
+.CoursesDetails5_review_right span {
+  display: block;   /* or inline-block */
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #2e2e2e;
+  margin-bottom: 6px; /* paragraph se gap */
+}
+
+/* TEXT */
+.CoursesDetails5_review_right p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #555;
+
+  margin-top: 27px;
+}
+
+
+
+.CoursesDetails5_review_social {
+  display: flex;
+  justify-content: flex-start;  /* RIGHT SIDE */
+  gap: 12px;
+  margin-top: 15px;
+}
+
+/* ICON STYLE */
+.CoursesDetails5_review_social svg {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+
+  background: #111;
+  color: #fff;
+
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+/* HOVER GREEN */
+.CoursesDetails5_review_social svg:hover {
+  background: #00b67a;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+
+
+  /* =========================
+   RATING SECTION
+========================= */
+
+.CoursesDetails5_rating_section {
+  width: 100%;
+  margin: 60px 0;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* LEFT CARD */
+.CoursesDetails5_rating_left_card {
+  width: 260px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.CoursesDetails5_rating_left_card h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+/* STARS */
+.CoursesDetails5_stars {
+  font-size: 20px;
+  color: #f5b50a;
+}
+
+.CoursesDetails5_white_star {
+  color: #ddd;
+}
+
+/* RIGHT SIDE */
+.CoursesDetails5_rating_right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ROW */
+.CoursesDetails5_rating_row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.CoursesDetails5_rating_row span {
+  width: 40px;
+  font-size: 14px;
+}
+
+/* BAR */
+.CoursesDetails5_bar {
+  flex: 1;
+  height: 8px;
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* FILL */
+.CoursesDetails5_fill {
+  height: 100%;
+  background: #f5b50a;
+}
+
+.w-60 { width: 60%; }
+.w-0 { width: 0%; }
+
+
+/* =========================
+   CD5 REVIEWS (ISOLATED)
+========================= */
+
+.cd5_reviews_wrap {
+  width: 100%;
+  margin: 80px 0;
+}
+
+.cd5_reviews_title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+/* CARD */
+.cd5_review_card {
+  display: flex;
+  gap: 25px;
+  padding: 25px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* IMAGE */
+.cd5_review_avatar img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.cd5_review_content {
+  flex: 1;
+}
+
+/* STARS */
+.cd5_review_stars {
+  color: #f5b50a;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+/* NAME */
+.cd5_review_name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: -34px; /* 👈 FIX GAP */
+  color: #111;
+}
+
+/* ROLE */
+.cd5_review_role {
+  font-size: 14px;
+  font-weight: 600;
+  color: #00b67a;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.cd5_review_text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+}

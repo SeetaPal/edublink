@@ -1,0 +1,119 @@
+/* MAIN */
+.coursesPage {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  align-items: flex-start;
+}
+
+/* RIGHT CARDS */
+.rightContent {
+  flex: 1;
+  background: #f5f7f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* TOP BAR */
+.topBar {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* GRID */
+.coursesDetail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* FILTER SIDEBAR */
+.leftFilter {
+  width: 280px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: sticky;
+  top: 20px;
+}
+
+/* SECTION */
+.filterSection {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* HEADER */
+.filterHeader {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 0;
+  position: relative;
+}
+
+/* PLUS ICON */
+.filterHeader::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+}
+
+/* CONTENT */
+.filterContent {
+  margin-top: 10px;
+}
+
+/* CHECKBOX */
+.filterContent label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filterContent input {
+  margin-right: 8px;
+}
+
+/* CARD FIX */
+.coursesDetail-card {
+  background: #f5f7f8;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.coursesDetail-card:hover {
+  transform: translateY(-6px);
+  background: #1ab69d;
+}
+
+/* LEVEL HOVER */
+.coursesDetail-card:hover .coursesDetail-level {
+  color: black !important;
+}
+
+/* DESCRIPTION HOVER */
+.coursesDetail-desc {
+  display: none;
+}
+
+.coursesDetail-card:hover .coursesDetail-desc {
+  display: block;
+  color: #fff;
+}
+
+
+.coursesDetail-course-image-wrapper {
+  width: 100%;
+  height: 280px;        /* 👈 wrapper fix */
+  overflow: hidden;     /* 👈 extra part hide */
+}
+
+.coursesDetail-course-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* 👈 clean fill */
+}

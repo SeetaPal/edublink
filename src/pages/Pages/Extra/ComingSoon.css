@@ -1,0 +1,179 @@
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Inter", Arial, sans-serif;
+}
+
+/* 🔥 FULL BACKGROUND */
+.coming-section{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#7be9c5,#6ff1dd);
+padding:20px;
+text-align:center;
+}
+
+/* CENTER CONTENT (NO CARD) */
+.coming-box{
+max-width:700px;
+width:100%;
+}
+
+.coming-box h1{
+font-size:52px;
+font-weight:800;
+color:#fff;
+margin-bottom:40px;
+}
+
+/* COUNTDOWN */
+.countdown{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-bottom:50px;
+}
+
+.countdown div{
+text-align:center;
+}
+
+.countdown h2{
+font-size:40px;
+color:#fff;
+font-weight:800;
+}
+
+.countdown span{
+color:#fff;
+font-size:14px;
+opacity:0.9;
+}
+
+/* EMAIL */
+.subscribe{
+display:flex;
+justify-content:center;
+align-items:center;
+max-width:420px;
+margin:auto;
+background:#fff;
+border-radius:50px;
+overflow:hidden;
+}
+
+.subscribe input{
+flex:1;
+padding:14px 20px;
+border:none;
+outline:none;
+font-size:15px;
+}
+
+.subscribe button{
+background:#19b36b;
+color:#fff;
+border:none;
+padding:14px 20px;
+cursor:pointer;
+font-weight:600;
+transition:.3s;
+}
+
+.subscribe button:hover{
+background:linear-gradient(135deg,#19b36b,#f7c948);
+transform:scale(1.05);
+}
+
+
+/* ==================== */
+
+@media (max-width: 600px) {
+  .coming-box h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  .countdown {
+    gap: 10px;
+  }
+
+  .countdown h2 {
+    font-size: 28px;
+  }
+
+  .countdown span {
+    font-size: 12px;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .subscribe input {
+    width: 100%;
+    text-align: center;
+  }
+
+  .subscribe button {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .coming-box h1 {
+    font-size: 42px;
+  }
+
+  .countdown {
+    gap: 15px;
+  }
+
+  .countdown h2 {
+    font-size: 34px;
+  }
+
+  .subscribe {
+    max-width: 500px;
+  }
+}
+
+
+@media (min-width: 901px) {
+  .coming-box h1 {
+    font-size: 52px;
+  }
+
+  .countdown h2 {
+    font-size: 40px;
+  }
+
+  .subscribe {
+    max-width: 420px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .coming-box h1 {
+    font-size: 26px;
+  }
+
+  .countdown h2 {
+    font-size: 22px;
+  }
+
+  .countdown {
+    gap: 8px;
+  }
+}

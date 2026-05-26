@@ -1,0 +1,229 @@
+/* ===== GLOBAL ===== */
+
+.contactMe_banner {
+  height: 320px;
+  background: linear-gradient(135deg, #eef7ff, #e6fff5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* ===== SHAPES ===== */
+
+.contactMe_shapeLeft {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  width: 90px;
+  opacity: 0.5;
+  transform: translateY(-50%);
+}
+
+.contactMe_shapeRight {
+  position: absolute;
+  right: 130px;
+  top: 50%;
+  width: 100px;
+  opacity: 0.5;
+}
+
+.contactMe_shapeCircle {
+  position: absolute;
+   height: 63%;
+    position: absolute;
+    right: -124px;
+    top: 15px;
+    width: 197px;
+}
+
+/* ===== BANNER CONTENT ===== */
+
+.contactMe_bannerContent h1 {
+  font-size: 56px;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.contactMe_breadcrumb {
+  margin-top: 10px;
+  color: #64748b;
+  font-size:18px;
+}
+
+.contactMe_home:hover {
+  color: #22c55e;
+  cursor: pointer;
+}
+
+.contactMe_active {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* ===== MAIN SECTION ===== */
+
+.contactMe_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 80px 20px;
+  flex-wrap: wrap;
+}
+
+.contactMe_image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* ===== RIGHT ===== */
+
+.contactMe_right {
+  max-width: 500px;
+}
+
+.contactMe_right h2 {
+  font-size: 32px;
+  color: #1e293b;
+  margin-bottom: 20px;
+    font-weight: 800;   /* 👈 make it strong bold */
+
+}
+
+.contactMe_right span {
+  color: #22c55e;
+    font-weight: 900;   /* 👈 extra bold highlight */
+
+}
+
+/* ===== BOX ===== */
+
+.contactMe_box {
+  margin-bottom: 15px;
+}
+
+.contactMe_box h4 {
+  font-size: 14px;
+  color: #111;
+    font-weight: 700;  
+
+}
+
+.contactMe_box p {
+  color: #555;
+}
+
+.contactMe_box a {
+  text-decoration: none;
+  color: #555;
+}
+
+.contactMe_box a:hover {
+  color: #22c55e;
+}
+
+/* ===== SOCIAL ===== */
+
+.contactMe_social {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contactMe_social div {
+  width: 40px;
+  height: 40px;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contactMe_social div:hover {
+  background: #22c55e;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* ===== FORM ===== */
+
+.contactMe_formSection {
+  background: #f8fafc;
+  padding: 70px 20px;
+}
+
+.contactMe_formBox {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.contactMe_formBox h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+/* INPUTS */
+
+.contactMe_row {
+  display: flex;
+  gap: 15px;
+}
+
+.contactMe_formBox input,
+.contactMe_formBox textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.contactMe_formBox textarea {
+  height: 130px;
+}
+
+/* BUTTON */
+
+.contactMe_formBox button {
+  background: #22c55e;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contactMe_formBox button:hover {
+  background: #16a34a;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+  .contactMe_bannerContent h1 {
+    font-size: 28px;
+  }
+
+  .contactMe_main {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contactMe_row {
+    flex-direction: column;
+  }
+
+}

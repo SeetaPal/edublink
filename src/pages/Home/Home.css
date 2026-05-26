@@ -1,0 +1,289 @@
+/* 🔹 1. COMMON / CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* 🔹 2. HERO SECTION */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0;
+  gap: 40px;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-left h1 span {
+  color: #2563eb;
+}
+
+.hero-left h2 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.hero-left p {
+  margin-top: 15px;
+  color: #666;
+  max-width: 500px;
+}
+
+.find-btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.find-btn:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+
+/* 🔹 3. HERO RIGHT (IMAGE + FLOAT CARD) */
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+}
+
+.floating-card {
+  position: absolute;
+  top: 70%;
+  left: -140px;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.floating-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.floating-card h4 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.floating-card p {
+  font-size: 12px;
+  margin: 0;
+  color: #666;
+}
+
+
+/* 🔹 4. STATS BAR */
+
+.stats-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(-90deg, #31B978, #1AB69D);
+  padding: 40px 30px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.stat-icon {
+  font-size: 40px;
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.stat-text h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.stat-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #e5e5e5;
+}
+
+
+/* 🔹 5. TOP CATEGORIES */
+
+.categories-section {
+  margin-top: 60px;
+  text-align: center;
+    margin-bottom: 120px;   /* 👈 ye add karo */
+
+}
+
+.categories-section h2 {
+  font-size: 28px;
+}
+
+.cat-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0 30px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cat-item {
+  padding: 18px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.cat-item svg {
+  font-size: 18px;
+}
+
+.cat-item:hover {
+  transform: translateY(-5px);
+}
+
+/* 🎨 Category Colors */
+
+.c1 { background: #eafaf6; color:#1ab69d; }
+.c2 { background: #fff0f3; color:#ff4d6d; }
+.c3 { background: #e9fff1; color:#2ecc71; }
+
+.c4 { background: #fff7e6; color:#f39c12; }
+.c5 { background: #f3f0ff; color:#7b61ff; }
+.c6 { background: #ffeaf5; color:#ff2d95; }
+
+.c7 { background: #eef1ff; color:#4c6fff; }
+.c8 { background: #fff3ea; color:#ff7a00; }
+.c9 { background: #eaf6ff; color:#00a8ff; }
+
+
+/* 🔹 6. ABOUT SECTION */
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  margin-top: 80px;
+    margin-top: 120px;
+}
+
+
+/* 🔹 7. ABOUT LEFT (IMAGE + VIDEO + CARD) */
+
+.about-media {
+  position: relative;
+  max-width: 520px;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 18px;
+}
+
+.about-video-overlay {
+  position: absolute;
+  /* top: -70px;
+  right: -120px; */
+    top: 10px;   /* 👈 safe value */
+  right: -80px;
+  width: 55%;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.about-video-overlay video {
+  width: 100%;
+}
+
+
+/* 🔹 8. AWARD CARD */
+.award-overlay-card {
+  position: absolute;
+  /* bottom: -80px; */
+    bottom: -40px;
+
+  right: -60px;
+  background: #fff;
+  padding: 16px 22px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.award-left {
+  width: 50px;
+  height: 50px;
+  background: #eafaf6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.award-icon {
+  color: #1ab69d;
+}
+
+.award-text h3 {
+  margin: 0;
+}
+
+.award-text p {
+  margin: 0;
+  font-size: 13px;
+  color: #777;
+}
+
+
+/* 🔹 9. ABOUT RIGHT */
+.about-right h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.about-right p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.about-features p {
+  margin: 6px 0;
+}

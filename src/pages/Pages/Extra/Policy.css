@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* 🔥 CONTENT SECTION (flat premium style) */
+.policy-section {
+  padding: 90px 8%;
+  background: #ffffff;
+}
+
+/* container (no card, just layout width control) */
+.policy-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* 🔥 HEADINGS (clean + premium minimal) */
+.policy-container h2 {
+  font-size: 33px;
+  font-weight: 700;
+  color: #111;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 14px;
+  letter-spacing: -0.2px;
+}
+
+/* green left line */
+/* 
+.policy-container h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 4px;
+  height: 22px;
+  background: #19b36b;
+  border-radius: 2px;
+} */
+
+/* 🔥 TEXT */
+.policy-container p {
+  color: #555;
+  font-size: 20px;
+  line-height: 1.9;
+  margin-bottom: 16px;
+  margin-left:20px;
+}
+
+/* 🔥 LIST */
+.policy-container ul {
+  margin: 15px 0 25px 22px;
+}
+
+.policy-container ul li {
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* green bullets */
+.policy-container ul li::marker {
+  color: #19b36b;
+}
+
+/* 🔥 breadcrumb (optional slight polish, banner untouched structure) */
+.breadcrumb {
+  font-size: 16px;
+  color: #666;
+}
+
+.breadcrumb .home {
+  color: #19b36b;
+  font-weight: 600;
+}
+
+.breadcrumb .active {
+  color: #111;
+  font-weight: 500;
+}
+
+/* 🔥 better spacing between sections */
+.policy-container h2:first-child {
+  margin-top: 0;
+}
+
+.tick-list {
+  list-style: none;
+  margin: 15px 0 25px 0;
+  padding: 0;
+}
+
+.tick-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* ✔ tick icon */
+.tick-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #19b36b;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* 🔥 responsive */
+@media (max-width: 768px) {
+  .policy-section {
+    padding: 60px 5%;
+  }
+
+  .policy-container h2 {
+    font-size: 20px;
+  }
+
+  .policy-container p {
+    font-size: 15px;
+  }
+}

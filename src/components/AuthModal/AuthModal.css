@@ -1,0 +1,54 @@
+.auth-modal {
+  padding: 30px;
+}
+
+/* Toggle Buttons */
+.auth-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.auth-toggle button {
+  width: 120px;
+  border-radius: 25px;
+}
+
+/* Active button */
+.auth-toggle .active {
+  background-color: #28a745 !important;
+  border: none;
+}
+
+/* Switch text */
+.auth-switch-text {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.auth-switch-text span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Inputs */
+.auth-modal input {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Submit button */
+.auth-submit {
+  background-color: #28a745;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.auth-submit:hover {
+  background-color: #218838;
+}

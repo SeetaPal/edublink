@@ -1,0 +1,1330 @@
+/* CoursesDetails4.css */
+
+.coursesDetails4_banner {
+  width: 100%;
+  height: 320px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coursesDetails4_overlay {
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.coursesDetails4_content {
+  width: 100%;
+  max-width: 1200px;
+
+  text-align: center;
+
+  color: #fff;
+}
+
+.coursesDetails4_title {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.3;
+
+  margin-bottom: 18px;
+}
+
+.coursesDetails4_title strong {
+  font-weight: 700;
+}
+
+.coursesDetails4_breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  flex-wrap: wrap;
+}
+
+.coursesDetails4_arrow {
+  color: #ddd;
+}
+
+.coursesDetails4_breadcrumb .active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .coursesDetails4_banner {
+    height: 260px;
+  }
+
+  .coursesDetails4_title {
+    font-size: 30px;
+  }
+
+  .coursesDetails4_breadcrumb {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .coursesDetails4_title {
+    font-size: 24px;
+  }
+
+  .coursesDetails4_breadcrumb {
+    gap: 8px;
+    line-height: 1.6;
+  }
+}
+
+
+/*  */
+
+/* ===== MAIN SECTION ===== */
+
+.coursesDetails4_main_section {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 70px auto;
+
+  display: flex;
+  gap: 40px;
+
+  padding: 0 20px;
+}
+
+/* ===== LEFT ===== */
+
+.coursesDetails4_left {
+  flex: 1;
+}
+
+.coursesDetails4_course_title {
+  font-size: 36px;
+  font-weight: 700;
+
+  color: #111;
+
+  margin-bottom: 18px;
+}
+
+.coursesDetails4_info_row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  font-size: 16px;
+  color: #666;
+
+  margin-bottom: 35px;
+}
+
+.coursesDetails4_reviews {
+  color: #f4b400;
+  font-weight: 600;
+}
+
+.coursesDetails4_reviews span {
+  color: #666;
+  margin-left: 5px;
+}
+
+.dot {
+  color: #bbb;
+}
+
+/* ===== VIDEO ===== */
+
+.coursesDetails4_video_wrapper {
+  width: 100%;
+  height: 500px;
+
+  border-radius: 16px;
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.coursesDetails4_video_wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== RIGHT CARD ===== */
+
+.coursesDetails4_right {
+  width: 350px;
+}
+
+.coursesDetails4_card {
+  width: 100%;
+
+  background: #fff;
+
+  border-radius: 18px;
+
+  padding: 30px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+
+  position: sticky;
+  top: 20px;
+}
+
+.coursesDetails4_card_title {
+  font-size: 24px;
+  font-weight: 700;
+
+  margin-bottom: 25px;
+
+  color: #111;
+}
+
+.coursesDetails4_card_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid #eee;
+
+  font-size: 15px;
+}
+
+.coursesDetails4_card_item span {
+  color: #666;
+}
+
+.coursesDetails4_card_item strong {
+  color: #111;
+}
+
+/* ===== BUTTON ===== */
+
+.coursesDetails4_buy_btn {
+  width: 100%;
+  height: 52px;
+
+  border: none;
+  border-radius: 10px;
+
+  margin-top: 30px;
+
+  background: #0f766e;
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.coursesDetails4_buy_btn:hover {
+  background: #0b5d56;
+}
+
+/* ===== SHARE ===== */
+
+.coursesDetails4_share {
+  margin-top: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coursesDetails4_share span {
+  font-size: 15px;
+  font-weight: 600;
+
+  color: #111;
+}
+
+.coursesDetails4_socials {
+  display: flex;
+  gap: 12px;
+}
+
+.coursesDetails4_socials i {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  background: #f3f3f3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.coursesDetails4_socials i:hover {
+  background: #0f766e;
+  color: #fff;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+
+  .coursesDetails4_main_section {
+    flex-direction: column;
+  }
+
+  .coursesDetails4_right {
+    width: 100%;
+  }
+
+  .coursesDetails4_card {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .coursesDetails4_course_title {
+    font-size: 28px;
+  }
+
+  .coursesDetails4_video_wrapper {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .coursesDetails4_video_wrapper {
+    height: 240px;
+  }
+
+  .coursesDetails4_info_row {
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .coursesDetails4_card {
+    padding: 22px;
+  }
+}
+
+/*  */
+/* ===== TABS SECTION ===== */
+
+.coursesDetails4_tabs_section {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 70px auto;
+
+  padding: 0 20px;
+}
+
+/* ===== TAB HEADER ===== */
+
+/* ===== TAB HEADER ===== */
+
+.coursesDetails4_tabs_header {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+
+  border-bottom: 1px solid #dcdcdc;
+
+  margin-bottom: 40px;
+
+  flex-wrap: wrap;
+}
+
+/* BUTTON STYLE */
+
+.coursesDetails4_tabs_header button {
+  position: relative;
+
+  background: transparent;
+  border: none;
+
+  padding: 0 0 18px;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #666;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* HOVER TEXT COLOR */
+
+.coursesDetails4_tabs_header button:hover {
+  color: #0f766e;
+}
+
+/* GREEN LINE */
+
+.coursesDetails4_tabs_header button::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -1px;
+
+  width: 0;
+  height: 3px;
+
+  background: #0f766e;
+
+  transition: 0.3s;
+}
+
+/* HOVER LINE */
+
+.coursesDetails4_tabs_header button:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE TAB */
+
+.coursesDetails4_tabs_header button.active {
+  color: #0f766e;
+}
+
+.coursesDetails4_tabs_header button.active::after {
+  width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .coursesDetails4_tabs_header {
+    gap: 22px;
+  }
+
+  .coursesDetails4_tabs_header button {
+    font-size: 16px;
+  }
+}
+
+
+/* ===== TAB CONTENT ===== */
+
+/* .coursesDetails4_tab_content {
+  background: #fff;
+
+  padding: 40px;
+
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.coursesDetails4_tab_content h2 {
+  font-size: 28px;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+
+  color: #111;
+}
+
+.coursesDetails4_tab_content p {
+  font-size: 16px;
+  line-height: 1.9;
+
+  color: #666;
+
+  margin-bottom: 25px;
+} */
+
+/* ===== LEARN LIST ===== */
+/* 
+.coursesDetails4_learn_list {
+  padding-left: 20px;
+
+  margin-bottom: 30px;
+}
+
+.coursesDetails4_learn_list li {
+  margin-bottom: 14px;
+
+  color: #444;
+
+  line-height: 1.8;
+} */
+
+
+
+/* ===== CURRICULUM ===== */
+
+/* .coursesDetails4_curriculum_item {
+  padding: 18px 22px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  margin-bottom: 18px;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  transition: 0.3s;
+
+  cursor: pointer;
+}
+
+.coursesDetails4_curriculum_item:hover {
+  background: #0f766e;
+  color: #fff;
+} */
+
+
+/* =========================
+   COURSES DETAILS 4 CURRICULUM
+========================= */
+
+.coursesDetails4_curriculum_card {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.coursesDetails4_curriculum_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.coursesDetails4_curriculum_header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+}
+
+.coursesDetails4_toggle_btn {
+  width: 45px;
+  height: 45px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  padding: 0;              /* ADD */
+  flex-shrink: 0;          /* ADD */
+}
+
+.coursesDetails4_toggle_btn svg {
+  font-size: 18px;
+  color: #000;
+
+  display: block;          /* ADD */
+  line-height: 1;          /* ADD */
+}
+
+/* .coursesDetails4_toggle_btn:hover {
+  background: #00b67a;
+  border-color: #00b67a;
+} */
+
+/* .coursesDetails4_toggle_btn:hover svg {
+  color: #fff;
+} */
+
+.coursesDetails4_curriculum_content {
+  margin-top: 25px;
+}
+
+.coursesDetails4_curriculum_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 22px 0;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.coursesDetails4_curriculum_left span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  color: #222;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.coursesDetails4_curriculum_left span:hover {
+  color: #00b67a;
+}
+
+.coursesDetails4_doc_icon,
+.coursesDetails4_q_icon {
+  color: #777;
+}
+
+.coursesDetails4_curriculum_right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.coursesDetails4_curriculum_right span:first-child {
+  background: #ffe4e4;
+  color: #d62828;
+
+  padding: 7px 14px;
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.coursesDetails4_preview {
+  color: #00b67a !important;
+  font-weight: 600;
+}
+
+.coursesDetails4_question_box {
+  background: #dff8ec;
+  color: #008a5e !important;
+
+  padding: 7px 14px;
+  border-radius: 6px;
+
+  font-size: 14px !important;
+  font-weight: 600;
+}
+
+.coursesDetails4_time_box {
+  background: #ffe4e4;
+  color: #d62828 !important;
+
+  padding: 7px 14px;
+  border-radius: 6px;
+
+  font-size: 14px !important;
+  font-weight: 600;
+}
+
+/* ===== INSTRUCTOR ===== */
+
+.coursesDetails4_instructor_box {
+  display: flex;
+  gap: 30px;
+
+  align-items: flex-start;
+}
+
+.coursesDetails4_instructor_box img {
+  width: 220px;
+  height: 220px;
+
+  border-radius: 18px;
+
+  object-fit: cover;
+}
+
+.coursesDetails4_instructor_info h3 {
+  font-size: 32px;
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.coursesDetails4_instructor_info span {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #0f766e;
+
+  font-weight: 600;
+}
+
+.coursesDetails4_instructor_socials {
+  display: flex;
+  gap: 15px;
+
+  margin-top: 25px;
+}
+
+.coursesDetails4_instructor_socials i {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: #f3f4f6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.coursesDetails4_instructor_socials i:hover {
+  background: #0f766e;
+  color: #fff;
+}
+
+/* ===== REVIEWS ===== */
+
+
+/* =========================
+   RATING SECTION
+========================= */
+
+.coursesDetails4_rating_section {
+  width: 100%;
+  margin: 80px 0;
+
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.coursesDetails4_rating_left_card {
+  width: 260px;
+
+  padding: 30px;
+
+  background: #fff;
+
+  border-radius: 12px;
+
+  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+
+  text-align: center;
+}
+
+.coursesDetails4_rating_left_card h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.coursesDetails4_stars {
+  font-size: 20px;
+  color: #f5b50a;
+}
+
+.coursesDetails4_white_star {
+  color: #ddd;
+}
+
+.coursesDetails4_rating_left_card p {
+  margin-top: 10px;
+  color: #666;
+}
+
+.coursesDetails4_rating_right {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.coursesDetails4_rating_row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.coursesDetails4_rating_row span {
+  width: 40px;
+
+  font-size: 14px;
+
+  color: #333;
+}
+
+.coursesDetails4_bar {
+  flex: 1;
+
+  height: 8px;
+
+  background: #eee;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.coursesDetails4_fill {
+  height: 100%;
+  background: #f5b50a;
+}
+
+.coursesDetails4_w_60 {
+  width: 60%;
+}
+
+.coursesDetails4_w_0 {
+  width: 0%;
+}
+
+
+/* =========================
+   REVIEWS
+========================= */
+
+
+
+.coursesDetails4_reviews_section {
+  width: 100%;
+  margin: 80px 0;
+}
+
+.coursesDetails4_reviews_title {
+  font-size: 34px;
+  font-weight: 700;
+
+  margin-bottom: 30px;
+
+  color: #000;
+}
+
+.coursesDetails4_review_item {
+  display: flex;
+  gap: 25px;
+
+  padding: 25px 0;
+
+  border-bottom: 1px solid #eee;
+}
+
+.coursesDetails4_review_left img {
+  width: 90px;
+  height: 90px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.coursesDetails4_review_right {
+  flex: 1;
+}
+
+.coursesDetails4_review_stars {
+  color: #f5b50a;
+
+  font-size: 18px;
+
+  margin-bottom: 6px;
+}
+
+.coursesDetails4_review_right h3 {
+  font-size: 20px;
+  font-weight: 600;
+
+  margin-bottom: 4px;
+}
+
+.coursesDetails4_review_right h4 {
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #00b67a;
+
+  margin-bottom: 10px;
+}
+
+.coursesDetails4_review_right p {
+  font-size: 15px;
+  line-height: 1.8;
+
+  color: #555;
+}
+
+
+
+/* =========================================================
+   COURSES SECTION
+========================================================= */
+
+
+.coursesDetails4_section {
+  background: #f0f4f5;
+  padding: 70px 80px;
+}
+
+.coursesDetails4_sectionTitle {
+  text-align: center;
+
+  font-size: 42px;
+  font-weight: 800;
+
+  margin-bottom: 50px;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.coursesDetails4_grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.coursesDetails4_card_course {
+  background: #fff;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  min-height: 620px;
+
+  transition: 0.4s ease;
+}
+
+.coursesDetails4_card_course:hover {
+  background: #16d39a;
+
+  transform: translateY(-8px);
+}
+
+/* =========================================================
+   IMAGE WRAPPER
+========================================================= */
+
+.coursesDetails4_imageWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.coursesDetails4_imageWrapper img {
+  width: 100%;
+  height: 230px;
+
+  object-fit: cover;
+
+  transition: 0.5s ease;
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.coursesDetails4_imageWrapper::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: transparent;
+
+  transition: 0.4s ease;
+}
+
+.coursesDetails4_card_course:hover
+.coursesDetails4_imageWrapper::after {
+  background: rgba(22, 211, 154, 0.9);
+}
+
+.coursesDetails4_card_course:hover
+.coursesDetails4_imageWrapper img {
+  transform: scale(1.08);
+  opacity: 0.08;
+}
+
+/* =========================================================
+   TIME BADGE
+========================================================= */
+
+.coursesDetails4_timeBadge {
+  position: absolute;
+
+  top: 14px;
+  right: 14px;
+
+  background: #ffeb3b;
+  color: #111;
+
+  padding: 7px 14px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  z-index: 20;
+
+  transition: 0.4s ease;
+}
+
+.coursesDetails4_card_course:hover
+.coursesDetails4_timeBadge {
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(-15px);
+}
+
+/* =========================================================
+   HEART
+========================================================= */
+
+.coursesDetails4_heart {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  background: #16d39a;
+  border: 2px solid #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(20px);
+
+  transition: 0.4s ease;
+
+  z-index: 30;
+}
+
+.coursesDetails4_card_course:hover .coursesDetails4_heart {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+.coursesDetails4_heart:hover {
+  background: red;
+}
+
+/* =========================================================
+   LEVEL
+========================================================= */
+
+.coursesDetails4_level {
+  display: inline-block;
+
+  margin: 24px 20px 12px;
+
+  background: #e8f8f3;
+  color: #0f8f69;
+
+  padding: 10px 14px;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: 0.4s ease;
+}
+
+.coursesDetails4_card_course:hover
+.coursesDetails4_level {
+  position: absolute;
+
+  top: 100px;
+  left: 20px;
+
+  margin: 0;
+
+  background: #fff;
+  color: #16d39a;
+
+  z-index: 20;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.coursesDetails4_card_course h3 {
+  font-size: 22px;
+  font-weight: 700;
+
+  line-height: 1.5;
+
+  margin: 10px 20px;
+
+  transition: 0.4s ease;
+}
+
+.coursesDetails4_card_course:hover h3 {
+  position: absolute;
+
+  top: 185px;
+  left: 20px;
+  right: 20px;
+
+  margin: 0;
+
+  color: #fff;
+
+  z-index: 20;
+}
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.coursesDetails4_rating {
+  margin: 12px 20px;
+
+  font-size: 14px;
+  color: #666;
+
+  transition: 0.4s ease;
+}
+
+.coursesDetails4_card_course:hover
+.coursesDetails4_rating {
+  position: absolute;
+
+  top: 285px;
+  left: 20px;
+
+  margin: 0;
+
+  color: #fff;
+
+  z-index: 20;
+}
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.coursesDetails4_price {
+  margin: 14px 20px;
+
+  font-size: 24px;
+  font-weight: 800;
+
+  color: #ff3d00;
+
+  transition: 0.4s ease;
+}
+
+.coursesDetails4_card_course:hover
+.coursesDetails4_price {
+  position: absolute;
+
+  top: 330px;
+  left: 20px;
+
+  margin: 0;
+
+  color: #fff;
+
+  z-index: 20;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.coursesDetails4_desc {
+  display: none;
+}
+
+.coursesDetails4_card_course:hover
+.coursesDetails4_desc {
+  display: block;
+
+  position: absolute;
+
+  top: 405px;
+  left: 20px;
+  right: 20px;
+
+  line-height: 1.7;
+
+  font-size: 14px;
+  color: #fff;
+
+  z-index: 20;
+}
+
+/* =========================================================
+   META
+========================================================= */
+
+.coursesDetails4_meta {
+  margin: 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 14px;
+  color: #555;
+
+  transition: 0.4s ease;
+}
+
+.coursesDetails4_card_course:hover
+.coursesDetails4_meta {
+  position: absolute;
+
+  top: 485px;
+  left: 20px;
+  right: 20px;
+
+  margin: 0;
+
+  color: #fff;
+
+  z-index: 20;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.coursesDetails4_btn {
+  display: none;
+}
+
+.coursesDetails4_card_course:hover
+.coursesDetails4_btn {
+  display: inline-block;
+
+  position: absolute;
+
+  bottom: 20px;
+  left: 20px;
+
+  background: red;
+  color: #fff;
+
+  border: none;
+
+  padding: 14px 28px;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.4s ease;
+
+  z-index: 20;
+}
+
+.coursesDetails4_btn:hover {
+  background: #fff;
+  color: red;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .coursesDetails4_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+
+  .coursesDetails4_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .coursesDetails4_section {
+    padding: 60px 20px;
+  }
+
+  .coursesDetails4_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coursesDetails4_sectionTitle {
+    font-size: 32px;
+  }
+}

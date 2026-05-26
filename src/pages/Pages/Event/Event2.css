@@ -1,0 +1,620 @@
+/* ===================== GLOBAL ===================== */
+.Event2-classname {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+/* ===================== BANNER ===================== */
+.Event2-banner {
+  background: linear-gradient(135deg, #f5f9fa, #eef3f6);
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Event2-content {
+  max-width: 900px;
+}
+
+.Event2-title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.Event2-breadcrumb {
+  color: #888;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.Event2-breadcrumb span {
+  margin: 0 6px;
+  color: #bbb;
+  padding: 30px;
+}
+
+/* ===================== IMAGE ===================== */
+
+/* ===================== IMAGE ===================== */
+
+.Event2-imageWrapper {
+  padding: 26px 60px;   /* 👈 side spacing */
+}
+.Event2-imageSection {
+  width: 100%;
+  margin: 60px 0;
+  background: #f5f9fa;   /* optional for empty space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Event2-imageSection img {
+  width: 100%;
+  height: auto;          /* 👈 MOST IMPORTANT */
+  object-fit: contain;   /* 👈 no crop */
+  display: block;
+}
+
+/* ===================== DETAILS LAYOUT ===================== */
+.Event2-details {
+  display: flex;
+  gap: 80px;
+  padding: 27px 79px;
+  background: #fff;
+  align-items: flex-start;   /* 👈 IMPORTANT */
+}
+
+/* ===================== LEFT ===================== */
+.Event2-left {
+  flex: 2;
+}
+
+.Event2-left h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.Event2-left h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #ff4d4d;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 2px;
+}
+
+.Event2-left h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 76px;
+  margin-bottom: 10px;
+}
+
+.Event2-left h3 + p {
+  margin-top: -35px;
+}
+
+.Event2-left p {
+  color: #555;
+  line-height: 1.9;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.Event2-left ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.Event2-left ul li {
+  margin-bottom: 12px;
+}
+
+/* ===================== LOCATION ===================== */
+
+/* container */
+.Event2-locationBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+
+  flex-wrap: nowrap;     /* 👈 force single line */
+  white-space: nowrap;   /* 👈 break na ho */
+}
+
+/* item */
+.loc-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* small icon */
+.icon {
+  color: #ff4d4d;
+  font-size: 12px;   /* 👈 small size */
+}
+
+/* divider */
+.divider {
+  color: #999;
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  .Event2-locationBox {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .divider {
+    display: none;   /* mobile pe hide */
+  }
+}
+
+
+
+
+/*===================== MAP =====================*/
+
+.Event2-map {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.Event2-map iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+/* ===================== RIGHT ===================== */
+Event2-right {
+  flex: 1;
+  align-self: flex-start;  /* 👈 ensures proper sticky behavior */
+}
+
+/* left side icon + text */
+.info-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* icon style */
+.info-icon {
+  color: #ff4d4d;
+  font-size: 14px;
+}
+
+/* CARD */
+.Event2-infoCard {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+
+  position: sticky;
+  top: 100px;   /* 👈 adjust based on header */
+}
+.Event2-infoCard:hover {
+  transform: translateY(-5px);
+}
+
+.Event2-infoCard h3 {
+  margin-bottom: 20px;
+}
+
+/* ===================== INFO ROW ===================== */
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+/* ===================== BUTTON ===================== */
+.book-btn {
+  width: 100%;
+  padding: 14px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff4d4d, #ff7a7a);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255,77,77,0.4);
+}
+
+/* ===================== COUNTDOWN ===================== */
+.Event2-countdown {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #f5f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  box-shadow: inset 0 0 0 2px #eee;
+}
+
+.circle span {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.circle small {
+  font-size: 11px;
+  color: #777;
+}
+
+.circle:hover {
+  background: #ff4d4d;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(255,77,77,0.4);
+}
+
+.circle:hover small {
+  color: #fff;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 900px) {
+  .Event2-details {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .Event2-infoCard {
+    position: static;
+  }
+
+  .Event2-imageSection {
+    height: 250px;
+  }
+
+  .Event2-title {
+    font-size: 28px;
+  }
+}
+
+
+/* ===================== SPEAKERS ===================== */
+
+
+
+/* IMAGE WRAPPER */
+.speaker-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 470px;   /* 👈 height increase (adjust 300–350) */
+}
+
+.Event2-speakers {
+  padding: 60px 80px;
+  background: #f9fbfc;
+}
+
+.speaker-title {
+  text-align: left;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.speaker-card {
+  text-align: center;
+}
+
+/* IMAGE WRAPPER */
+.speaker-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* IMAGE */
+/* .speaker-img img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: 0.4s;
+} */
+
+
+.speaker-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* 👈 IMPORTANT (image stretch nahi hogi) */
+  object-position: center top; /* 👈 face cut na ho */
+  transition: 0.4s ease;
+}
+
+/* GREEN OVERLAY */
+.speaker-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 180, 120, 0.6);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* HOVER EFFECT */
+.speaker-img:hover img {
+  /* transform: scale(1.1); */
+    transform: scale(1.08);
+
+}
+
+.speaker-img:hover::after {
+  opacity: 1;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* SHARE BUTTON */
+/* .share-btn {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 2;
+} */
+
+/* SHARE BUTTON */
+
+.share-btn {
+  width: 36px;
+  height: 36px;
+  background: transparent;      /* 👈 no fill */
+  border: 2px solid #4cffab;    /* 👈 green border */
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  color: #4cffab;               /* 👈 icon green */
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+/* .share-btn {
+  width: 36px;
+  height: 36px;
+  background: #4cffab;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  color: #333;
+  font-size: 14px;
+  transition: 0.3s;
+} */
+
+/* hover effect */
+.share-btn:hover {
+  background: #00b478;
+  color: #fff;
+}
+
+/* HIDDEN LINKS */
+.social-links {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+
+.social-links a {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  color: #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #00b478;
+  color: #fff;
+}
+
+/* .social-links a {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  color: #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+} */
+
+.speaker-img:hover .social-links {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* TEXT */
+.speaker-card h2 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.speaker-card p {
+  font-size: 14px;
+  color: #777;
+}
+
+
+@media (max-width: 1024px) {
+
+  .Event2-details {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .Event2-left,
+  .Event2-right {
+    width: 100%;
+  }
+
+  .speaker-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Event2-speakers {
+    padding: 50px 30px;
+  }
+
+  .Event2-imageWrapper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .Event2-title {
+    font-size: 26px;
+  }
+
+  .Event2-banner {
+    padding: 70px 15px;
+  }
+
+  .Event2-details {
+    padding: 30px 15px;
+  }
+
+  .Event2-map iframe {
+    height: 300px;
+  }
+
+  .speaker-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .speaker-img {
+    height: 300px; /* reduce height */
+  }
+
+  .Event2-countdown {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .Event2-title {
+    font-size: 22px;
+  }
+
+  .Event2-breadcrumb {
+    font-size: 12px;
+  }
+
+  .Event2-left h2 {
+    font-size: 26px;
+  }
+
+  .Event2-left h3 {
+    font-size: 20px;
+  }
+
+  .speaker-title {
+    font-size: 24px;
+  }
+
+  .Event2-imageSection img {
+    height: auto;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .circle span {
+    font-size: 14px;
+  }
+}
